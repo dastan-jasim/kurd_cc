@@ -47,3 +47,18 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# CSV
+*.csv
+*.dta
+
+# Ignore all data
+data/*
+
+# DS_STORE
+.DS_Store
+
+
+!.gitkeep
+
+!*/
