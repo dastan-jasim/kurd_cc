@@ -1,3 +1,7 @@
+load(".data/processed/dat_merge_num_k.Rdata")
+load(".data/processed/dat_merge_num.Rdata")
+load(".data/processed/dat_merge_imp_.Rdata")
+
 # ------ MODEL --------
 
 #index for dependent variable

@@ -1451,5 +1451,5 @@ dat_merge_k<-dat_merge_num_k%>%
   filter(kurd_dummy==1)
 # ------ SAVE DATASETS --------
 
-save(dat_merge_k, file = "./dat_merge_k.Rdata")
-save(dat_merge_num_k, file = "./dat_merge_num_k.Rdata")
+save(dat_merge_k, file = ".data/processed/dat_merge_k.Rdata")
+save(dat_merge_num_k, file = ".data/processed/dat_merge_num_k.Rdata")

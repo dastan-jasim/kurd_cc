@@ -1,9 +1,27 @@
-if(!require(installr)) {
-  install.packages("installr"); require(installr)} #load / install+load installr
-
-updateR()
-
 #------- necessary packages ------
+install.packages(c(
+  "readstata13",
+  "tidyverse",
+  "sjPlot",
+  "dplyr",
+  "foreign",
+  "forcats",
+  "plyr",
+  "naniar",
+  "dataMaid", 
+  "enc",
+  "tidyr",
+  "rnaturalearth",
+  "rnaturalearthdata",
+  "texreg",
+  "xml2",
+  "stringr",
+  "haven",
+  "ggridges",
+  "mice",
+  "xplain",
+  "corrplot"
+), repos = "https://cloud.r-project.org")
 
 library(readstata13)
 library(tidyverse)

@@ -1,3 +1,6 @@
+load(".data/processed/dat_merge_num_k.Rdata")
+load(".data/processed/dat_merge_num.Rdata")
+
 vis_miss(dat_merge_num_k)
 
 impu_select <- dat_merge_num_k %>%
@@ -891,3 +894,4 @@ nes_imp$conf_armed_nes <- complete(mice(nes_imp, method = "cart"))$conf_armed_ne
 
 dat_merge_imp_ <- plyr::rbind.fill(dat_merge_imp, krg_imp, nes_imp) #num merged set
 
+save(dat_merge_imp_, file = ".data/processed/dat_merge_imp_.Rdata")
