@@ -1,5 +1,5 @@
-load(".data/processed/dat_merge_num_k.Rdata")
-load(".data/processed/dat_merge_num.Rdata")
+load("./data/processed/dat_merge_num_k.Rdata")
+load("./data/processed/dat_merge_num.Rdata")
 
 vis_miss(dat_merge_num_k)
 

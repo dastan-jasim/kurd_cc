@@ -1,3 +1,41 @@
+## Imputation Procedures
+
+The following plots show a comparison between the original distribution of variables used in this analysis and the outcome of different imputation methods. The procedures are explained in the *Imputation* subchapter of the quantitative methodology chapter.  
+
+The method used was the **CART imputation**, as the following plots showed this type of imputation was the closest to the original distributions.  
+
+---
+
+### Comparison between Original Variables and PMM, CART, and Lasso Imputed Distributions
+
+![Comparison: pol_interest](notebooks/figs/01_pol_interest.png)  
+![Comparison: conf_armed](notebooks/figs/02_conf_armed.png)  
+![Comparison: conf_pol](notebooks/figs/03_conf_pol.png)  
+![Comparison: conf_parl](notebooks/figs/04_conf_parl.png)  
+![Comparison: conf_gov](notebooks/figs/05_conf_gov.png)  
+![Comparison: conf_part](notebooks/figs/06_conf_part.png)  
+![Comparison: conf_court](notebooks/figs/07_conf_court.png)  
+![Comparison: rate_system](notebooks/figs/08_rate_system.png)  
+![Comparison: sys_leader](notebooks/figs/09_sys_leader.png)  
+![Comparison: sys_exp](notebooks/figs/10_sys_exp.png)  
+![Comparison: sys_democ](notebooks/figs/11_sys_democ.png)  
+![Comparison: democ_own](notebooks/figs/12_democ_own.png)  
+![Comparison: relig_pers](notebooks/figs/13_relig_pers.png)  
+![Comparison: conf_system_kri](notebooks/figs/14_conf_system_kri.png)  
+![Comparison: conf_parl_kri](notebooks/figs/15_conf_parl_kri.png)  
+![Comparison: conf_krg](notebooks/figs/16_conf_krg.png)  
+![Comparison: conf_part_krd](notebooks/figs/17_conf_part_krd.png)  
+![Comparison: conf_court_kri](notebooks/figs/18_conf_court_kri.png)  
+![Comparison: conf_police_kri](notebooks/figs/19_conf_police_kri.png)  
+![Comparison: conf_armed_kri](notebooks/figs/20_conf_armed_kri.png)  
+![Comparison: rate_sys_nes](notebooks/figs/21_rate_sys_nes.png)  
+![Comparison: conf_parl_nes](notebooks/figs/22_conf_parl_nes.png)  
+![Comparison: conf_nes](notebooks/figs/23_conf_nes.png)  
+![Comparison: conf_part_nes](notebooks/figs/24_conf_part_nes.png)  
+![Comparison: conf_court_nes](notebooks/figs/25_conf_court_nes.png)  
+![Comparison: conf_pol_nes](notebooks/figs/26_conf_pol_nes.png)  
+
+
 ## Comparison Model Diagnostic with Original and Imputed Data
 
 The following plots show a comparison of model diagnostics on both the overall models and the models for the KRI and NES subsets. The diagnostics were made for both the imputed and non-imputed original datasets. These diagnostics are crucial for assessing the performance and reliability of the country fixed effects models as well as the model fit.  
@@ -15,32 +53,32 @@ Across all models, residuals appear randomly distributed, Q-Q plots follow a dia
 
 ### Diagnostics for Models with Original Dataset
 
-![Diagnostic for Model 1 with Original Dataset](./figs/diagnostic_normal1.png)  
+![Diagnostic for Model 1 with Original Dataset](./figs/imp_figdiagnostic_normal1.png)  
 *Figure: Diagnostic for Model 1 with Original Dataset*
 
-![Diagnostic for Model 2 with Original Dataset](./figs/diagnostic_normal2.png)  
+![Diagnostic for Model 2 with Original Dataset](./figs/imp_figdiagnostic_normal2.png)  
 *Figure: Diagnostic for Model 2 with Original Dataset*
 
-![Diagnostic for Model 3 with Original Dataset](./figs/diagnostic_normal3.png)  
+![Diagnostic for Model 3 with Original Dataset](./figs/imp_figdiagnostic_normal3.png)  
 *Figure: Diagnostic for Model 3 with Original Dataset*
 
-![Diagnostic for Model 4 with Original Dataset](./figs/diagnostic_normal4.png)  
+![Diagnostic for Model 4 with Original Dataset](./figs/imp_figdiagnostic_normal4.png)  
 *Figure: Diagnostic for Model 4 with Original Dataset*
 
 ---
 
 ### Diagnostics for Models with Imputed Dataset
 
-![Diagnostic for Model 5 with Imputed Dataset](./figs/diagnostic_imp1.png)  
+![Diagnostic for Model 5 with Imputed Dataset](./figs/imp_figdiagnostic_imp1.png)  
 *Figure: Diagnostic for Model 5 with Imputed Dataset*
 
-![Diagnostic for Model 6 with Imputed Dataset](./figs/diagnostic_imp2.png)  
+![Diagnostic for Model 6 with Imputed Dataset](./figs/imp_figdiagnostic_imp2.png)  
 *Figure: Diagnostic for Model 6 with Imputed Dataset*
 
-![Diagnostic for Model 7 with Imputed Dataset](./figs/diagnostic_imp3.png)  
+![Diagnostic for Model 7 with Imputed Dataset](./figs/imp_figdiagnostic_imp3.png)  
 *Figure: Diagnostic for Model 7 with Imputed Dataset*
 
-![Diagnostic for Model 8 with Imputed Dataset](./figs/diagnostic_imp4.png)  
+![Diagnostic for Model 8 with Imputed Dataset](./figs/imp_figdiagnostic_imp4.png)  
 *Figure: Diagnostic for Model 8 with Imputed Dataset*
 
 ---
