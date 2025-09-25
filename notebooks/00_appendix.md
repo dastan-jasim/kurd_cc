@@ -8,32 +8,32 @@ The method used was the **CART imputation**, as the following plots showed this 
 
 ### Comparison between Original Variables and PMM, CART, and Lasso Imputed Distributions
 
-![Comparison: pol_interest](notebooks/figs/01_pol_interest.png)  
-![Comparison: conf_armed](notebooks/figs/02_conf_armed.png)  
-![Comparison: conf_pol](notebooks/figs/03_conf_pol.png)  
-![Comparison: conf_parl](notebooks/figs/04_conf_parl.png)  
-![Comparison: conf_gov](notebooks/figs/05_conf_gov.png)  
-![Comparison: conf_part](notebooks/figs/06_conf_part.png)  
-![Comparison: conf_court](notebooks/figs/07_conf_court.png)  
-![Comparison: rate_system](notebooks/figs/08_rate_system.png)  
-![Comparison: sys_leader](notebooks/figs/09_sys_leader.png)  
-![Comparison: sys_exp](notebooks/figs/10_sys_exp.png)  
-![Comparison: sys_democ](notebooks/figs/11_sys_democ.png)  
-![Comparison: democ_own](notebooks/figs/12_democ_own.png)  
-![Comparison: relig_pers](notebooks/figs/13_relig_pers.png)  
-![Comparison: conf_system_kri](notebooks/figs/14_conf_system_kri.png)  
-![Comparison: conf_parl_kri](notebooks/figs/15_conf_parl_kri.png)  
-![Comparison: conf_krg](notebooks/figs/16_conf_krg.png)  
-![Comparison: conf_part_krd](notebooks/figs/17_conf_part_krd.png)  
-![Comparison: conf_court_kri](notebooks/figs/18_conf_court_kri.png)  
-![Comparison: conf_police_kri](notebooks/figs/19_conf_police_kri.png)  
-![Comparison: conf_armed_kri](notebooks/figs/20_conf_armed_kri.png)  
-![Comparison: rate_sys_nes](notebooks/figs/21_rate_sys_nes.png)  
-![Comparison: conf_parl_nes](notebooks/figs/22_conf_parl_nes.png)  
-![Comparison: conf_nes](notebooks/figs/23_conf_nes.png)  
-![Comparison: conf_part_nes](notebooks/figs/24_conf_part_nes.png)  
-![Comparison: conf_court_nes](notebooks/figs/25_conf_court_nes.png)  
-![Comparison: conf_pol_nes](notebooks/figs/26_conf_pol_nes.png)  
+![Comparison: pol_interest](./figs/01_pol_interest.png)  
+![Comparison: conf_armed](./figs/02_conf_armed.png)  
+![Comparison: conf_pol](./figs/03_conf_pol.png)  
+![Comparison: conf_parl](./figs/04_conf_parl.png)  
+![Comparison: conf_gov](./figs/05_conf_gov.png)  
+![Comparison: conf_part](./figs/06_conf_part.png)  
+![Comparison: conf_court](./figs/07_conf_court.png)  
+![Comparison: rate_system](./figs/08_rate_system.png)  
+![Comparison: sys_leader](./figs/09_sys_leader.png)  
+![Comparison: sys_exp](./figs/10_sys_exp.png)  
+![Comparison: sys_democ](./figs/11_sys_democ.png)  
+![Comparison: democ_own](./figs/12_democ_own.png)  
+![Comparison: relig_pers](./figs/13_relig_pers.png)  
+![Comparison: conf_system_kri](./figs/14_conf_system_kri.png)  
+![Comparison: conf_parl_kri](./figs/15_conf_parl_kri.png)  
+![Comparison: conf_krg](./figs/16_conf_krg.png)  
+![Comparison: conf_part_krd](./figs/17_conf_part_krd.png)  
+![Comparison: conf_court_kri](./figs/18_conf_court_kri.png)  
+![Comparison: conf_police_kri](./figs/19_conf_police_kri.png)  
+![Comparison: conf_armed_kri](./figs/20_conf_armed_kri.png)  
+![Comparison: rate_sys_nes](./figs/21_rate_sys_nes.png)  
+![Comparison: conf_parl_nes](./figs/22_conf_parl_nes.png)  
+![Comparison: conf_nes](./figs/23_conf_nes.png)  
+![Comparison: conf_part_nes](./figs/24_conf_part_nes.png)  
+![Comparison: conf_court_nes](./figs/25_conf_court_nes.png)  
+![Comparison: conf_pol_nes](./figs/26_conf_pol_nes.png)  
 
 
 ## Comparison Model Diagnostic with Original and Imputed Data
@@ -53,16 +53,16 @@ Across all models, residuals appear randomly distributed, Q-Q plots follow a dia
 
 ### Diagnostics for Models with Original Dataset
 
-![Diagnostic for Model 1 with Original Dataset](./figs/imp_figdiagnostic_normal1.png)  
+![Diagnostic for Model 1 with Original Dataset](./figs/diagnostic_normal1.png)  
 *Figure: Diagnostic for Model 1 with Original Dataset*
 
-![Diagnostic for Model 2 with Original Dataset](./figs/imp_figdiagnostic_normal2.png)  
+![Diagnostic for Model 2 with Original Dataset](./figs/diagnostic_normal2.png)  
 *Figure: Diagnostic for Model 2 with Original Dataset*
 
-![Diagnostic for Model 3 with Original Dataset](./figs/imp_figdiagnostic_normal3.png)  
+![Diagnostic for Model 3 with Original Dataset](./figs/diagnostic_normal3.png)  
 *Figure: Diagnostic for Model 3 with Original Dataset*
 
-![Diagnostic for Model 4 with Original Dataset](./figs/imp_figdiagnostic_normal4.png)  
+![Diagnostic for Model 4 with Original Dataset](./figs/diagnostic_normal4.png)  
 *Figure: Diagnostic for Model 4 with Original Dataset*
 
 ---
