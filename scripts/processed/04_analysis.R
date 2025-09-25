@@ -1368,15 +1368,15 @@ library(sf)
 library(ggplot2)
 
 # Load your shapefile or geojson file containing region boundaries
-iran_1 <- st_read("./shapefile/IRN_adm1.shp")
-iraq_1 <- st_read("./shapefile/IRQ_adm1.shp")
-syria_1 <- st_read("./shapefile/SYR_adm1.shp")
-turk_1 <- st_read("./shapefile/TUR_adm1.shp")
+iran_1 <- st_read("./data/raw/shapefile/IRN_adm1.shp")
+iraq_1 <- st_read("./data/raw/shapefile/IRQ_adm1.shp")
+syria_1 <- st_read("./data/raw/shapefile/SYR_adm1.shp")
+turk_1 <- st_read("./data/raw/shapefile/TUR_adm1.shp")
 
 kurdistan <- rbind(iran_1, iraq_1, syria_1, turk_1)
 
 
-test <- st_read("./shapefile/SYR_adm2.shp")
+test <- st_read("./data/raw/shapefile/SYR_adm2.shp")
 
 kurdistan <- kurdistan %>%
   mutate(kurdregion = case_when(conf_gov >0  ~ 1))
