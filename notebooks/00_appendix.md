@@ -15,60 +15,60 @@ Across all models, residuals appear randomly distributed, Q-Q plots follow a dia
 
 ### Diagnostics for Models with Original Dataset
 
-![Diagnostic for Model 1 with Original Dataset](./notebooks/figs/diagnostic_normal1.png)  
+![Diagnostic for Model 1 with Original Dataset](./figs/diagnostic_normal1.png)  
 *Figure: Diagnostic for Model 1 with Original Dataset*
 
-![Diagnostic for Model 2 with Original Dataset](./notebooks/figs/diagnostic_normal2.png)  
+![Diagnostic for Model 2 with Original Dataset](./figs/diagnostic_normal2.png)  
 *Figure: Diagnostic for Model 2 with Original Dataset*
 
-![Diagnostic for Model 3 with Original Dataset](./notebooks/figs/diagnostic_normal3.png)  
+![Diagnostic for Model 3 with Original Dataset](./figs/diagnostic_normal3.png)  
 *Figure: Diagnostic for Model 3 with Original Dataset*
 
-![Diagnostic for Model 4 with Original Dataset](./notebooks/figs/diagnostic_normal4.png)  
+![Diagnostic for Model 4 with Original Dataset](./figs/diagnostic_normal4.png)  
 *Figure: Diagnostic for Model 4 with Original Dataset*
 
 ---
 
 ### Diagnostics for Models with Imputed Dataset
 
-![Diagnostic for Model 5 with Imputed Dataset](./notebooks/figs/diagnostic_imp1.png)  
+![Diagnostic for Model 5 with Imputed Dataset](./figs/diagnostic_imp1.png)  
 *Figure: Diagnostic for Model 5 with Imputed Dataset*
 
-![Diagnostic for Model 6 with Imputed Dataset](./notebooks/figs/diagnostic_imp2.png)  
+![Diagnostic for Model 6 with Imputed Dataset](./figs/diagnostic_imp2.png)  
 *Figure: Diagnostic for Model 6 with Imputed Dataset*
 
-![Diagnostic for Model 7 with Imputed Dataset](./notebooks/figs/diagnostic_imp3.png)  
+![Diagnostic for Model 7 with Imputed Dataset](./figs/diagnostic_imp3.png)  
 *Figure: Diagnostic for Model 7 with Imputed Dataset*
 
-![Diagnostic for Model 8 with Imputed Dataset](./notebooks/figs/diagnostic_imp4.png)  
+![Diagnostic for Model 8 with Imputed Dataset](./figs/diagnostic_imp4.png)  
 *Figure: Diagnostic for Model 8 with Imputed Dataset*
 
 ---
 
 ### Country Subset Diagnostics
 
-![Diagnostic for Turkey Model with Original Dataset](./notebooks/figs/diagnostic_trc_OG.png)  
+![Diagnostic for Turkey Model with Original Dataset](./figs/diagnostic_trc_OG.png)  
 *Figure: Diagnostic for Turkey Model with Original Dataset*
 
-![Diagnostic for Iran Model with Original Dataset](./notebooks/figs/diagnostic_irn_OG.png)  
+![Diagnostic for Iran Model with Original Dataset](./figs/diagnostic_irn_OG.png)  
 *Figure: Diagnostic for Iran Model with Original Dataset*
 
-![Diagnostic for Turkey Model with Imputed Dataset](./notebooks/figs/diagnostic_trc_IMP.png)  
+![Diagnostic for Turkey Model with Imputed Dataset](./figs/diagnostic_trc_IMP.png)  
 *Figure: Diagnostic for Turkey Model with Imputed Dataset*
 
-![Diagnostic for Iran Model with Imputed Dataset](./notebooks/figs/diagnostic_irn_IMP.png)  
+![Diagnostic for Iran Model with Imputed Dataset](./figs/diagnostic_irn_IMP.png)  
 *Figure: Diagnostic for Iran Model with Imputed Dataset*
 
-![Diagnostic for KRI Model with Original Dataset](./notebooks/figs/diagnostic_krg_org.png)  
+![Diagnostic for KRI Model with Original Dataset](./figs/diagnostic_krg_org.png)  
 *Figure: Diagnostic for KRI Model with Original Dataset*
 
-![Diagnostic for NES Model with Original Dataset](./notebooks/figs/diagnostic_nes_org.png)  
+![Diagnostic for NES Model with Original Dataset](./figs/diagnostic_nes_org.png)  
 *Figure: Diagnostic for NES Model with Original Dataset*
 
-![Diagnostic for KRI Model with Imputed Dataset](./notebooks/figs/diagnostic_krg_imp.png)  
+![Diagnostic for KRI Model with Imputed Dataset](./figs/diagnostic_krg_imp.png)  
 *Figure: Diagnostic for KRI Model with Imputed Dataset*
 
-![Diagnostic for NES Model with Imputed Dataset](./notebooks/figs/diagnostic_nes_imp.png)  
+![Diagnostic for NES Model with Imputed Dataset](./figs/diagnostic_nes_imp.png)  
 *Figure: Diagnostic for NES Model with Imputed Dataset*
 
 ## Comparison Models with Original and Imputed Data
