@@ -48,9 +48,10 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-# CSV
+# Data 
 *.csv
 *.dta
+*.Rdata
 
 # Ignore all data
 data/*
