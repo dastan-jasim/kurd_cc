@@ -48,23 +48,56 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-# Data 
+# --- Data files (anywhere) ---
 *.csv
+*.CSV
+*.tsv
+*.TSV
+*.xlsx
+*.XLSX
+*.xls
+*.XLS
 *.dta
-*.Rdata
+*.DTA
+*.sav
+*.SAV
+*.rds
+*.RDS
+*.rda
+*.Rda
+*.RDA
+*.RData
+*.rdata
+*.parquet
+*.feather
+*.jsonl
 
-# Shapefiles
+# --- Shapefile & GIS sidecars (anywhere) ---
+*.shp
 *.shx
 *.dbf
 *.prj
-*.shp
+*.cpg
+*.qix
+*.sbn
+*.sbx
+*.fix
+*.shp.xml
+*.gpkg
+*.geojson
 
-# Ignore all data
-data/*
-data/processed*
-shapefile/*
 
-# DS_STORE
+# --- Ignore these directories no matter where they appear ---
+**/data/**
+**/raw/**
+**/shapefile/**
+**/shapefiles/**
+**/layers/**
+
+# Keep placeholder files
+!**/.gitkeep
+
+# macOS
 .DS_Store
 
 
