@@ -199,10 +199,21 @@ def map_kri_resources():
 # ---------------- 4) AANES 2015 vs 2023 (+ Turkish control) ----------------
 def map_aanes():
     base, admin1 = setup_base()
-    nes15 = read_gdf(LAYERS / "nes_2015.geojson")
+
+    # Prefer 2013 if available; otherwise fall back to 2015
+    nes_old_path = LAYERS / "nes_2013.geojson"
+    if nes_old_path.exists():
+        nes_old = read_gdf(nes_old_path)
+        old_label = "AANES 2013"
+    else:
+        nes_old = read_gdf(LAYERS / "nes_2015.geojson")
+        old_label = "AANES 2015 (overlay)"
+
     nes23 = read_gdf(LAYERS / "nes_2023.geojson")
 
-    def _has_tc(row): return any("TC" in str(v).upper() for v in row.values)
+    # Detect Turkish-controlled features (TC) in 2023 layer
+    def _has_tc(row): 
+        return any("TC" in str(v).upper() for v in row.values)
     tc = nes23[nes23.apply(_has_tc, axis=1)] if not nes23.empty else nes23
     nes23_clean = nes23.drop(tc.index) if not nes23.empty else nes23
 
@@ -210,17 +221,32 @@ def map_aanes():
     base.plot(ax=ax, facecolor="0.90", edgecolor="black", linewidth=0.6, zorder=1)
     admin1.boundary.plot(ax=ax, color="0.7", linewidth=0.25, zorder=2)
 
-    if not nes15.empty:
-        nes15.plot(ax=ax, facecolor="white", edgecolor="black", linewidth=1.0, hatch="...", zorder=3)
+    # --- Background overlays first ---
     if not nes23_clean.empty:
-        nes23_clean.plot(ax=ax, facecolor="white", edgecolor="black", linewidth=1.2, hatch="|||", zorder=4)
+        # 2023: vertical hatch
+        nes23_clean.plot(ax=ax, facecolor="white", edgecolor="black", linewidth=1.1,
+                         hatch="|||", zorder=3)
     if tc is not None and not tc.empty:
-        tc.plot(ax=ax, facecolor="white", edgecolor="black", linewidth=1.0, hatch="xx", zorder=5)
+        # Turkish control: cross hatch
+        tc.plot(ax=ax, facecolor="white", edgecolor="black", linewidth=1.0,
+                hatch="xx", zorder=4)
 
+    # --- Foreground: 2013/2015 transparent overlay on TOP ---
+    if not nes_old.empty:
+        # Semi-transparent white so underlying hatches remain visible
+        # (use alpha on the artist; hatches + alpha are unreliable, so no hatch here)
+        nes_old.plot(ax=ax,
+                     facecolor="white", edgecolor="black",
+                     linewidth=1.2, alpha=0.35,  # transparency
+                     zorder=6)
+        # Re-stamp a fully opaque boundary for crisp edges in print
+        nes_old.boundary.plot(ax=ax, color="black", linewidth=1.1, zorder=7)
+
+    # Legend
     handles = [
-        Patch(facecolor="white", edgecolor="black", hatch="...", label="AANES 2015"),
         Patch(facecolor="white", edgecolor="black", hatch="|||", label="AANES 2023"),
         Patch(facecolor="white", edgecolor="black", hatch="xx",  label="Turkish control"),
+        Patch(facecolor="white", edgecolor="black", label=old_label, alpha=0.35),  # transparent handle
     ]
     ax.legend(handles=handles, loc="lower left", frameon=True, edgecolor="black")
 
@@ -234,11 +260,12 @@ def map_aanes():
         syr = base
     theme_bw(ax, syr, pad_scale=(0.15, 0.20))
 
-    # Labels: ensure TURKEY is present (and SYRIA)
+    # Country labels: ensure Turkey & Syria show
     label_countries(ax, base, only_isos=["TUR","SYR"], overrides={"TUR": {"dy": 0.7}})
 
-    fig.savefig(OUTDIR / "aanes_2015_2023_bw.pdf", bbox_inches="tight")
+    fig.savefig(OUTDIR / "aanes_2013_overlay_bw.pdf", bbox_inches="tight")
     plt.close(fig)
+
 
 # ---------------- 5) Iran: Kurdish Sunni vs Shia ----------------
 def map_iran_religion():
