@@ -24,7 +24,11 @@ This repository contains the appendix materials for my book *The Kurdish Case fo
   - **`00_appendix.md`** – an appendix with explanations of:  
     - Imputation model diagnostics  
     - Comparisons of models with and without imputation  
-  - Figures are provided in `notebooks/figs/`.  
+  - Figures are provided in `notebooks/figs/`.
+ 
+### Maps
+  - Maps are provided in `outputs/maps/`.
+  - They are all based on the Naturalearth base shapefiles and regional shapefiles I created myself.
 
 ## Citation  
 If you use this repository or adapt the scripts, please cite:  
