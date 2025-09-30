@@ -207,7 +207,7 @@ def map_aanes():
         old_label = "AANES 2013"
     else:
         nes_old = read_gdf(LAYERS / "nes_2015.geojson")
-        old_label = "AANES 2015 (overlay)"
+        old_label = "AANES 2015"
 
     nes23 = read_gdf(LAYERS / "nes_2023.geojson")
 
